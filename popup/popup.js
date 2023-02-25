@@ -8,7 +8,7 @@ function listenForClicks() {
         else {
             b.innerText = "adblock on";
             browser.tabs.sendMessage(tabs[0].id, {
-                command: "beastify",
+                command: "adblock",
               });
         }
 
