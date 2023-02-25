@@ -1,0 +1,12 @@
+{
+	"manifest_version": 1.0,
+	"name": "Offer You Can't Refuse",
+	"version": 1.0,
+
+	"description": "replaces text and images on a web page to randomized quotes and scenes from the movies: Gotti (2018), Morbius, and The Godfather",
+	"homepage_url": "https://github.com/anvitha305/offer-you-cant-refuse",
+
+	"permissions": [
+		"activeTab"
+	]
+}
