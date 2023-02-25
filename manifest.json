@@ -11,8 +11,8 @@
 	},
 
 	"borwser_action": {
-		"default_icon": "icons/morb.png"
-		"default_title": "Offer You Can't Refuse"
+		"default_icon": "icons/morb.png",
+		"default_title": "Offer You Can't Refuse",
 		"default_popup": "popup/popup.html"
 	},
 
