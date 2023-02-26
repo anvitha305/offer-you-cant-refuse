@@ -13,5 +13,6 @@ Morbius [it's morbin' time]:
 
 
 The extension popup:
+<br>
 <img width="332" alt="image" src="https://user-images.githubusercontent.com/44482134/221416413-59062338-2305-4357-92c7-b9d4f49cafb7.png">
 
