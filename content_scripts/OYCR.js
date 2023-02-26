@@ -8,11 +8,62 @@
     }
   
     function addMovies(msg){
+        reset();
         adblock();
         oycr = Array.from(document.getElementsByClassName("oycrstyling"));
         oycr.forEach(e=>{
             let image = document.createElement("img");
-            movieURL="https://raw.githubusercontent.com/anvitha305/offer-you-cant-refuse/main/morb/gotti0.png";
+            if (msg === "Gotti"){
+            arr=[
+                "https://raw.githubusercontent.com/anvitha305/offer-you-cant-refuse/main/morb/gotti0.png",
+                "https://raw.githubusercontent.com/anvitha305/offer-you-cant-refuse/main/morb/gotti1.png",
+                "https://raw.githubusercontent.com/anvitha305/offer-you-cant-refuse/main/morb/gotti2.png",
+                "https://raw.githubusercontent.com/anvitha305/offer-you-cant-refuse/main/morb/gotti3.png",
+                "https://raw.githubusercontent.com/anvitha305/offer-you-cant-refuse/main/morb/gotti4.png",
+                "https://raw.githubusercontent.com/anvitha305/offer-you-cant-refuse/main/morb/gotti5.png"
+            ];
+            movieURL = arr[Math.floor(Math.random() * arr.length)];
+            }
+            else if (msg === "Godfather") {
+                arr=[
+                    "https://raw.githubusercontent.com/anvitha305/offer-you-cant-refuse/main/morb/god0.png",
+                    "https://raw.githubusercontent.com/anvitha305/offer-you-cant-refuse/main/morb/god1.png",
+                    "https://raw.githubusercontent.com/anvitha305/offer-you-cant-refuse/main/morb/god2.png",
+                    "https://raw.githubusercontent.com/anvitha305/offer-you-cant-refuse/main/morb/god3.png",
+                    "https://raw.githubusercontent.com/anvitha305/offer-you-cant-refuse/main/morb/god4.png"
+                ];
+                movieURL = arr[Math.floor(Math.random() * arr.length)];
+            }
+            else if (msg === "Morbius"){
+                arr=[
+                    "https://raw.githubusercontent.com/anvitha305/offer-you-cant-refuse/main/morb/morb0.png",
+                    "https://raw.githubusercontent.com/anvitha305/offer-you-cant-refuse/main/morb/morb1.png",
+                    "https://raw.githubusercontent.com/anvitha305/offer-you-cant-refuse/main/morb/morb2.png",
+                    "https://raw.githubusercontent.com/anvitha305/offer-you-cant-refuse/main/morb/morb3.png",
+                    "https://raw.githubusercontent.com/anvitha305/offer-you-cant-refuse/main/morb/morb4.png"
+                ];
+                movieURL = arr[Math.floor(Math.random() * arr.length)];
+            }
+            else if (msg==="Random"){
+                arr=[
+                    "https://raw.githubusercontent.com/anvitha305/offer-you-cant-refuse/main/morb/god0.png",
+                    "https://raw.githubusercontent.com/anvitha305/offer-you-cant-refuse/main/morb/god1.png",
+                    "https://raw.githubusercontent.com/anvitha305/offer-you-cant-refuse/main/morb/god2.png",
+                    "https://raw.githubusercontent.com/anvitha305/offer-you-cant-refuse/main/morb/god3.png",
+                    "https://raw.githubusercontent.com/anvitha305/offer-you-cant-refuse/main/morb/god4.png",
+                    "https://raw.githubusercontent.com/anvitha305/offer-you-cant-refuse/main/morb/gotti0.png",
+                    "https://raw.githubusercontent.com/anvitha305/offer-you-cant-refuse/main/morb/gotti1.png",
+                    "https://raw.githubusercontent.com/anvitha305/offer-you-cant-refuse/main/morb/gotti2.png",
+                    "https://raw.githubusercontent.com/anvitha305/offer-you-cant-refuse/main/morb/gotti3.png",
+                    "https://raw.githubusercontent.com/anvitha305/offer-you-cant-refuse/main/morb/gotti4.png",
+                    "https://raw.githubusercontent.com/anvitha305/offer-you-cant-refuse/main/morb/morb0.png",
+                    "https://raw.githubusercontent.com/anvitha305/offer-you-cant-refuse/main/morb/morb1.png",
+                    "https://raw.githubusercontent.com/anvitha305/offer-you-cant-refuse/main/morb/morb2.png",
+                    "https://raw.githubusercontent.com/anvitha305/offer-you-cant-refuse/main/morb/morb3.png",
+                    "https://raw.githubusercontent.com/anvitha305/offer-you-cant-refuse/main/morb/morb4.png"
+                ];
+                movieURL = arr[Math.floor(Math.random() * arr.length)];
+            }
             image.setAttribute("src", movieURL);
             image.style="width:100%; object-fit: fill;"
             image.className="movieimage";
@@ -32,7 +83,6 @@
             });
 
         });
-        reset()
 
     }
     function reset(){

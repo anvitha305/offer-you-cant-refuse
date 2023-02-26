@@ -6,47 +6,28 @@ const hidePage = `.oycrstyling > :not(.movieimage) {
 function listenForClicks(){
     document.addEventListener("load", e=>{
 
-        browser.tabs.insertCSS({code: hidePage}).then(() => {
-            browser.tabs.sendMessage(tabs[0].id, {
-              command: "addmovies",
-              msg: "random"
-            });
-          });
-    })
+          browser.tabs.query({active: true, currentWindow: true})
+            .then(()=>{
+              browser.tabs.insertCSS({code: hidePage}).then(() => {
+                browser.tabs.sendMessage(tabs[0].id, {
+                  command: "addmovies",
+                  msg: "random"
+                });
+              });
+            })
+            .catch(reportError);
+    });
     document.addEventListener("click", (e) => {
 
         function adhide(tabs) {
           browser.tabs.insertCSS({code: hidePage}).then(() => {
             browser.tabs.sendMessage(tabs[0].id, {
               command: "addmovies",
-              msg: "random"
+              msg: e.target.textContent
             });
           });
         }
-        function morb(tabs) {
-            browser.tabs.insertCSS({code: hidePage}).then(() => {
-              browser.tabs.sendMessage(tabs[0].id, {
-                command: "addmovies",
-                msg: "morb"
-              });
-            });
-          }
-          function gotti(tabs) {
-            browser.tabs.insertCSS({code: hidePage}).then(() => {
-              browser.tabs.sendMessage(tabs[0].id, {
-                command: "addmovies",
-                msg: "gotti"
-              });
-            });
-          }
-          function godfa(tabs) {
-            browser.tabs.insertCSS({code: hidePage}).then(() => {
-              browser.tabs.sendMessage(tabs[0].id, {
-                command: "addmovies",
-                msg: "godfa"
-              });
-            });
-          }
+       
     
         function reset(tabs) {
           browser.tabs.removeCSS({code: hidePage}).then(() => {
@@ -75,22 +56,7 @@ function listenForClicks(){
           browser.tabs.query({active: true, currentWindow: true})
             .then(reset)
             .catch(reportError);
-        } else if (e.target.type ==="morbi"){
-            browser.tabs.query({active: true, currentWindow: true})
-            .then(morb)
-            .catch(reportError);
-        }
-        else if (e.target.type ==="godfa"){
-            browser.tabs.query({active: true, currentWindow: true})
-            .then(godfa)
-            .catch(reportError);
-        }
-        else if (e.target.type ==="gotti"){
-            browser.tabs.query({active: true, currentWindow: true})
-            .then(gotti)
-            .catch(reportError);
-        }
-        else{
+        } else {
           browser.tabs.query({active: true, currentWindow: true})
             .then(adhide)
             .catch(reportError);
