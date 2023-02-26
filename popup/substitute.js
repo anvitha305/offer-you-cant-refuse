@@ -1,4 +1,4 @@
-function getSentences() {
+function subSentences() {
 	const reg = /^\\s+[A-Za-z,;'\"\\s]+[.?!]$/;
 	const quotes = {
 		"Gotti": Array("No, no. You don't wanna be a baseball player.", "You like... What's that movie you like so much? About spaghetti. Meatballs or something.", "This" +
