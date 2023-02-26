@@ -73,8 +73,9 @@
     }
 // find existing ads in the page
     function adblock(){
-        adwords = ["ad", "adContainer","ads","rail", "sponsored"]
+        adwords = ["ad", "darla", "adContainer","ads","rail", "sponsored"]
         classes = [].concat(...[...document.querySelectorAll('*')].map(elt => [...elt.classList]));
+
         classes = classes.filter(s=>adwords.some(el=>s.toLowerCase().split("-").join("_").split(".").join("_").split("_").includes(el)))
         classes.forEach(element => {
             Array.from(document.getElementsByClassName(element)).forEach(e=>{
@@ -83,6 +84,14 @@
             });
 
         });
+        ids = document.querySelectorAll('[id]');
+
+        ids = Array.from(ids).map(e=>e.id)
+        ids = ids.filter(s=>adwords.some(el=>s.toLowerCase().split("-").join("_").split(".").join("_").split("_").includes(el)))
+        ids.forEach(element => {
+                            document.getElementById(element).classList.add("oycrstyling");
+                        document.getElementById(element).style.border = "5px solid red";
+                    });        
 
     }
     function reset(){

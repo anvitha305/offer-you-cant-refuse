@@ -11,5 +11,5 @@ function subSentences() {
 		" that nobody can destroy.", "I brought him into this world. You brought him into the life.")
 	}
 	//Array.from(query) -> filter = only text elements -> ?foreach with replace(reg, quote)?
-	Array.from(document.querySelectorAll("*")).filter(elem => elem.innerText).forEach(elem => elem.innerText = elem.innerText.replace(reg, quotes["gotti"][Math.floor(Math.random() * quotes["gottie"].length)]));
+	Array.from(document.querySelectorAll("*")).filter(elem => elem.innerText).forEach(elem => elem.innerText = elem.innerText.replace(reg, quotes["gotti"][Math.floor(Math.random() * quotes["gotti"].length)]));
 }
