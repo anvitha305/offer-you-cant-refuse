@@ -73,7 +73,7 @@
     }
 // find existing ads in the page
     function adblock(){
-        adwords = ["ad", "darla", "adContainer","ads","rail", "sponsored"]
+        adwords = ["ad", "darla", "gemini","adContainer","ads","rail", "sponsored"]
         classes = [].concat(...[...document.querySelectorAll('*')].map(elt => [...elt.classList]));
 
         classes = classes.filter(s=>adwords.some(el=>s.toLowerCase().split("-").join("_").split(".").join("_").split("_").includes(el)))
