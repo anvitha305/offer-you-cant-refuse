@@ -9,6 +9,7 @@ function listenForClicks(){
         browser.tabs.insertCSS({code: hidePage}).then(() => {
             browser.tabs.sendMessage(tabs[0].id, {
               command: "addmovies",
+              msg: "random"
             });
           });
     })

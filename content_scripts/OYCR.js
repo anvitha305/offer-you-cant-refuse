@@ -9,25 +9,10 @@
   
     function addMovies(msg){
         adblock();
-        let choices =[];
-        if (msg==="random"){
-            choices.push(...["god", "gotti", "morb"])
-        }
-        else if (msg==="morb"){
-            choices.push("morb")
-        }
-        else if (msg==="godfa"){
-            choices.push("god")
-        }
-        else if (msg==="gotti"){
-            choices.push("gotti")
-        }
         oycr = Array.from(document.getElementsByClassName("oycrstyling"));
         oycr.forEach(e=>{
             let image = document.createElement("img");
-            moviename = choices[Math.floor(Math.random() * choice.length)];
-            movienum = Math.floor(Math.random() * (5)).toString();
-            movieURL="https://raw.githubusercontent.com/anvitha305/offer-you-cant-refuse/main/morb/"+moviename+movienum+".png";
+            movieURL="https://raw.githubusercontent.com/anvitha305/offer-you-cant-refuse/main/morb/god0.png";
             image.setAttribute("src", movieURL);
             image.style="width:100%; object-fit: fill;"
             image.className="movieimage";
