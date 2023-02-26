@@ -1,5 +1,5 @@
 # offer-you-cant-refuse
-Browser adblocker extension that replaces ads with images and site content with quotes from our favorite movies [Gotti, Morbius, The Godfather].
+Browser adblocker extension that replaces ads with images from our favorite movies [Gotti, Morbius, The Godfather].
 
 The Godfather version
 <img width="958" alt="image" src="https://user-images.githubusercontent.com/44482134/221390902-9806b101-d99e-4254-909b-4a0b163ef32c.png"> 
