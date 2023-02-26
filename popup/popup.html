@@ -4,17 +4,27 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="popup.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+
   </head>
 
 <body>
   <div id="popup-content">
 	<h1>An Offer You Can't Refuse</h1>
-    <img src="../morb/morbius.gif" style="width:450px; height:450px">
-    <marquee scrollamount="2">it's morbin time</marquee>
-    <button id="toggle">adblock on</button>
-	<button>Gottify</button>
-	<button>Morbify</button>
-	<button>Mob-bossify</button>
+    <marquee scrollamount="2" style="text-align: center;">
+      <img src="../morb/morbius.gif" style="width:50px; height:50px">
+      <br>
+      <p>it's morbin time</p></marquee>
+      <button id="r" type="reset">Reset</button>
+	  <button id="g" type="gotti">Gottify</button>
+	  <button id="morb" type="morbi">Morbify</button>
+	  <button id="fath" type="godfa">Mob-bossify</button>
+    <button id="surpr">Surprise Me!</button>
+  </div>
+  <div id="error-content" class="hidden">
+    <p>Can't get you offers you can't refuse.</p><p>Try a different page.</p>
   </div>
   <script src="popup.js"></script>
 </body>
