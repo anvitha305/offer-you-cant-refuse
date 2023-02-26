@@ -12,7 +12,7 @@
         oycr = Array.from(document.getElementsByClassName("oycrstyling"));
         oycr.forEach(e=>{
             let image = document.createElement("img");
-            movieURL="https://raw.githubusercontent.com/anvitha305/offer-you-cant-refuse/main/morb/god0.png";
+            movieURL="https://raw.githubusercontent.com/anvitha305/offer-you-cant-refuse/main/morb/gotti0.png";
             image.setAttribute("src", movieURL);
             image.style="width:100%; object-fit: fill;"
             image.className="movieimage";
