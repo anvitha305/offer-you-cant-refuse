@@ -1,4 +1,19 @@
+ body {
+  background-color: plum;
+ }
 .hidden {
     display: none;
   }
- 
+ h1,button,p {font-family: 'Tilt Warp', cursive; text-align: center;}
+ #r {background-color: pink;} 
+ #r:hover {background-color: indigo; color:white}
+ #g {background-color: black; color: white;}
+ #g:hover {background-color: gold; color:black;}
+ #morb {background-color: turquoise;}
+ #morb:hover {background-color: teal; color:white;}
+ #fath {background-color: maroon; color:white;}
+ #fath:hover {background-color: gray; color:black;}
+#surpr:hover {
+  background-image: url('https://media0.giphy.com/headers/jmckeehen/s2wy7iphPP98.gif');
+  color:white;
+}
